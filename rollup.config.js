@@ -2,8 +2,15 @@ import typescript from '@rollup/plugin-typescript';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
+import fs from 'fs';
+import nodePolyfills from 'rollup-plugin-polyfill-node'
 
 const isProd = (process.env.BUILD === 'production');
+const buildInfo = JSON.stringify({
+  build: isProd ? 'prod' : 'dev',
+  date: new Date(),
+})
+fs.writeFileSync('./src/data/buildInfo.json', buildInfo);
 
 const banner =
 `/*
@@ -13,7 +20,7 @@ if you want to view the source visit the plugins github repository
 `;
 
 export default {
-  input: 'src/main.ts',
+  input: 'src/main.tsx',
   output: {
     file: 'main.js',
     sourcemap: 'inline',
@@ -28,5 +35,6 @@ export default {
     nodeResolve({browser: true}),
     commonjs(),
     json(),
+    nodePolyfills(),
   ]
 };

@@ -23,7 +23,7 @@ export default class ReminderAndCalendarSettingTab extends PluginSettingTab {
 				.setValue('')
 				.onChange(async (value) => {
 					console.log('Secret: ' + value);
-					this.plugin.settings.mySetting = value;
+					//this.plugin.settings.mySetting = value;
 					await this.plugin.saveSettings();
 				}))
 	}

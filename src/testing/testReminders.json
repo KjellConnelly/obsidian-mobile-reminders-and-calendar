@@ -1,5 +1,5 @@
 [{
-"title" : "???",
+"title" : "Whatever this is...",
 "notes" : "",
 "dueDate" : "",
 "priority" : "None",
@@ -18,12 +18,12 @@
   "creationDate" : ""
 },
 "hasAlarms" : "No",
-"reminderLocation" : "",
+"reminderLocation" : [""],
 "creationDate" : "2021-08-31T05:48:59-07:00"
 }, {
-"title" : "The father",
+"title" : "Reminder for 9/1/2021 7:30pm",
 "notes" : "",
-"dueDate" : "",
+"dueDate" : "2021-09-01T19:30:00-07:00",
 "priority" : "None",
 "isFlagged" : "No",
 "url" : "",
@@ -36,7 +36,7 @@
   "creationDate" : ""
 },
 "hasAlarms" : "No",
-"reminderLocation" : "",
+"reminderLocation" : ["1600 Pennsylvania Avenue NW", "Washington, DC 20500"],
 "creationDate" : "2021-08-31T05:49:03-07:00"
 }, {
 "title" : "Child 2",
@@ -54,7 +54,7 @@
   "creationDate" : "2021-08-31T05:49:03-07:00"
 },
 "hasAlarms" : "No",
-"reminderLocation" : "",
+"reminderLocation" : [""],
 "creationDate" : "2021-08-31T05:49:26-07:00"
 }, {
 "title" : "Child 1",
@@ -72,6 +72,6 @@
   "creationDate" : "2021-08-31T05:49:03-07:00"
 },
 "hasAlarms" : "Yes",
-"reminderLocation" : "",
+"reminderLocation" : [""],
 "creationDate" : "2021-08-31T05:49:26-07:00"
 }]
